@@ -1,0 +1,28 @@
+# Contact API
+/contact:
+  get:
+    $ref: ./contact/contact-list.yaml
+  post:
+    $ref: ./contact/contact-save.yaml
+/contact/{id}:
+  get:
+    $ref: ./contact/contact-get.yaml
+  put:
+    $ref: ./contact/contact-update.yaml
+  delete:
+    $ref: ./contact/contact-delete.yaml
+
+# Product API
+/product:
+  get:
+    $ref: ./product/product-list.yaml
+  post:
+    $ref: ./product/product-save.yaml
+/product/{id}:
+  get:
+    $ref: ./product/product-get.yaml
+  put:
+    $ref: ./product/product-update.yaml
+  delete:
+    $ref: ./product/product-delete.yaml
+

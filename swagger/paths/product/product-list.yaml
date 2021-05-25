@@ -1,0 +1,18 @@
+tags :
+  - Product
+summary: Get all the products
+description: Get all the products
+produces:
+  - application/json
+responses:
+  200:
+    description: Products fetched successfully
+    schema:
+      type: array
+      items:
+        $ref: ../../definitions/Product.yaml
+  400:
+    description: Error in fetching products
+    schema:
+      type: object
+      $ref: ../../definitions/CommonResponse.yaml

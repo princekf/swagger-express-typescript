@@ -1,0 +1,35 @@
+tags :
+  - Product
+summary: Update a product
+description: Update a product
+produces:
+  - application/json
+consumes:
+  - application/json
+parameters:
+  - 
+    in: path
+    name: id
+    description: Product id that needs to be updated
+    required: true
+    type: string
+  - 
+    in: body
+    name: body
+    description: Product object
+    required: true
+    schema:
+      type: object
+      $ref: ../../definitions/Product.yaml
+  
+responses:
+  200:
+    description: Product updated successfully
+    schema:
+      type: object
+      $ref: ../../definitions/CommonResponse.yaml
+  400:
+    description: Error in updating product
+    schema:
+      type: object
+      $ref: ../../definitions/CommonResponse.yaml

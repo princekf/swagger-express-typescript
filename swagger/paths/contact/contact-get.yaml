@@ -1,0 +1,24 @@
+tags :
+  - Contact
+summary: Get a contact
+description: Get a contact with the id specified in parameter
+produces:
+  - application/json
+parameters:
+  - 
+    in: path
+    name: id
+    description: Contact id that needs to be fetched
+    required: true
+    type: string
+responses:
+  200:
+    description: Contact fetched successfully
+    schema:
+      type: object
+      $ref: ../../definitions/Contact.yaml
+  400:
+    description: Error in fetching contact
+    schema:
+      type: object
+      $ref: ../../definitions/CommonResponse.yaml

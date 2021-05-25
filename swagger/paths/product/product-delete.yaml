@@ -1,0 +1,26 @@
+tags :
+  - Product
+summary: Delete a product
+description: Delete a product with the id specified in parameter
+produces:
+  - application/json
+consumes:
+  - application/json
+parameters:
+  - 
+    in: path
+    name: id
+    description: Product id that needs to be deleted
+    required: true
+    type: string
+responses:
+  200:
+    description: Product deleted successfully
+    schema:
+      type: object
+      $ref: ../../definitions/CommonResponse.yaml
+  400:
+    description: Error in deleting product
+    schema:
+      type: object
+      $ref: ../../definitions/CommonResponse.yaml

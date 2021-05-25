@@ -1,0 +1,26 @@
+tags :
+  - Contact
+summary: Delete a contact
+description: Delete a contact with the id specified in parameter
+produces:
+  - application/json
+consumes:
+  - application/json
+parameters:
+  - 
+    in: path
+    name: id
+    description: Contact id that needs to be deleted
+    required: true
+    type: string
+responses:
+  200:
+    description: Contact deleted successfully
+    schema:
+      type: object
+      $ref: ../../definitions/CommonResponse.yaml
+  400:
+    description: Error in deleting contact
+    schema:
+      type: object
+      $ref: ../../definitions/CommonResponse.yaml

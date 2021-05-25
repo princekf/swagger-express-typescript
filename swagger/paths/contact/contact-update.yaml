@@ -1,0 +1,35 @@
+tags :
+  - Contact
+summary: Update a contact
+description: Update a contact
+produces:
+  - application/json
+consumes:
+  - application/json
+parameters:
+  - 
+    in: path
+    name: id
+    description: Contact id that needs to be updated
+    required: true
+    type: string
+  - 
+    in: body
+    name: body
+    description: Contact object
+    required: true
+    schema:
+      type: object
+      $ref: ../../definitions/Contact.yaml
+  
+responses:
+  200:
+    description: Contact updated successfully
+    schema:
+      type: object
+      $ref: ../../definitions/CommonResponse.yaml
+  400:
+    description: Error in updating contact
+    schema:
+      type: object
+      $ref: ../../definitions/CommonResponse.yaml

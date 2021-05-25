@@ -1,0 +1,24 @@
+tags :
+  - Product
+summary: Get a product
+description: Get a product with the id specified in parameter
+produces:
+  - application/json
+parameters:
+  - 
+    in: path
+    name: id
+    description: Product id that needs to be fetched
+    required: true
+    type: string
+responses:
+  200:
+    description: Product fetched successfully
+    schema:
+      type: object
+      $ref: ../../definitions/Product.yaml
+  400:
+    description: Error in fetching product
+    schema:
+      type: object
+      $ref: ../../definitions/CommonResponse.yaml

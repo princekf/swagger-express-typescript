@@ -1,0 +1,18 @@
+tags :
+  - Contact
+summary: Get all the contacts
+description: Get all the contacts
+produces:
+  - application/json
+responses:
+  200:
+    description: Contacts fetched successfully
+    schema:
+      type: array
+      items:
+        $ref: ../../definitions/Contact.yaml
+  400:
+    description: Error in fetching contacts
+    schema:
+      type: object
+      $ref: ../../definitions/CommonResponse.yaml

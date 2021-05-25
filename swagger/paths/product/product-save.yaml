@@ -1,0 +1,29 @@
+tags :
+  - Product
+summary: Save a new product
+description: Save a new product
+produces:
+  - application/json
+consumes:
+  - application/json
+parameters:
+  - 
+    in: body
+    name: body
+    description: Product object
+    required: true
+    schema:
+      type: object
+      $ref: ../../definitions/Product.yaml
+  
+responses:
+  200:
+    description: Product saved successfully
+    schema:
+      type: object
+      $ref: ../../definitions/CommonResponse.yaml
+  400:
+    description: Error in saving product
+    schema:
+      type: object
+      $ref: ../../definitions/CommonResponse.yaml
