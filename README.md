@@ -5,6 +5,7 @@
 ```
 * yarn install
 * yarn dev
+* Open http://localhost:3000/api/docs/
 ```
 
 ### Creating Swagger API documentation from multiple yaml files ###
